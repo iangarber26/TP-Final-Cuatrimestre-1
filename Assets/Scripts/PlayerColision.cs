@@ -21,11 +21,11 @@ public class PlayerColision : MonoBehaviour
     {
         if (collision.gameObject.name == "Obstacle")
         {
-            transform.position = new Vector3(0, 1, 0);
+            transform.position = new Vector3(0, 1, 14);
         }
         if (collision.gameObject.name == "DeathFloor")
         {
-            transform.position = new Vector3(0, 1, 0);
+            transform.position = new Vector3(0, 1, 14);
         }
         if (collision.gameObject.name == "Finish")
         {
