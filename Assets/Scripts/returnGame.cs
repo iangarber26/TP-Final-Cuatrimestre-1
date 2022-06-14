@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour
+public class returnGame : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -16,7 +17,7 @@ public class LoadScene : MonoBehaviour
 
     }
 
-    public void OnClick()
+    public void goBackGame()
     {
         SceneManager.LoadScene("SampleScene");
     }
