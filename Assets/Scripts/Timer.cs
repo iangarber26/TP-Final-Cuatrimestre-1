@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public string leveltoload;
-    public float timer = 120f;
+    public float timer = 60f;
     public Text timerSeconds;
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
         timerSeconds.text = timer.ToString("f2");
         if (timer <= 0)
         {
-            SceneManager.LoadScene("GAME-OVER");
+            SceneManager.LoadScene("GAME_OVER");
         }
     }
 

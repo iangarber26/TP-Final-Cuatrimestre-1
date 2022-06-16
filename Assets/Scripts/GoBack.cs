@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class returnGame : MonoBehaviour
+public class GoBack : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class returnGame : MonoBehaviour
 
     }
 
-    public void goBackGame()
+    public void GoBackButton()
     {
         SceneManager.LoadScene("SampleScene");
     }

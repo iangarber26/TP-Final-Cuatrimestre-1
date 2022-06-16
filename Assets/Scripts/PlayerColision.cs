@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerColision : MonoBehaviour
 {
-
+    public GameObject Confeti;
+    GameObject clon;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +22,26 @@ public class PlayerColision : MonoBehaviour
     {
         if (collision.gameObject.name == "Obstacle")
         {
-            transform.position = new Vector3(0, 1, 14);
+            SceneManager.LoadScene("GAME_OVER");
+        }
+
+        if (collision.gameObject.name == "Ground123")
+        {
+            for(int i = 0; i<=20; i++)
+            {
+                Confeti.SetActive(true);
+                Instantiate(Confeti);
+                Destroy(Confeti, 6);
+            }
+        }
+
+        if (collision.gameObject.tag == "Confeti")
+        {
+            SceneManager.LoadScene("GAME_OVER");
         }
         if (collision.gameObject.name == "DeathFloor")
         {
-            transform.position = new Vector3(0, 1, 14);
+            SceneManager.LoadScene("GAME_OVER");
         }
         if (collision.gameObject.name == "Finish")
         {
