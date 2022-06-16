@@ -35,7 +35,7 @@ public class PlatformScript : MonoBehaviour
             toRight = false;
             GameObject clone;
             clone = Instantiate(prefab1);
-            clone.transform.position = baseDer.transform.position + new Vector3(0, 1, 0);
+            clone.transform.position = baseDer.transform.position + new Vector3(-3.9f, 0.5f, -38);
         }
         else if (transform.position.x <= xLimitL)
         {

@@ -50,5 +50,10 @@ public class PlayerController : MonoBehaviour
         {
             hasJump = 2;
         }
+
+        if (col.gameObject.name == "Ground123")
+        {
+            hasJump = 2;
+        }
     }
 }

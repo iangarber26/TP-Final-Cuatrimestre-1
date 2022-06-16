@@ -30,14 +30,15 @@ public class PlayerColision : MonoBehaviour
             for(int i = 0; i<=20; i++)
             {
                 Confeti.SetActive(true);
-                Instantiate(Confeti);
-                Destroy(Confeti, 6);
+                clon = Instantiate(Confeti);
+                Destroy(clon, 6);
             }
         }
 
         if (collision.gameObject.tag == "Confeti")
         {
             SceneManager.LoadScene("GAME_OVER");
+            Debug.Log("Confeti");
         }
         if (collision.gameObject.name == "DeathFloor")
         {
